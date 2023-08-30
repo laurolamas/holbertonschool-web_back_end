@@ -9,5 +9,5 @@ async def async_generator():
     """Async generator"""
     for i in range(10):
         random_number = random.uniform(0, 10)
-        time.sleep(1)
+        await time.sleep(1)
         yield(random_number)
