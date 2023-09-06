@@ -1,0 +1,1 @@
+db.adminCommand('listDatabases').databases.forEach(function(db) { print(db.name + '\t' + db.sizeOnDisk) });
